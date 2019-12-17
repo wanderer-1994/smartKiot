@@ -2,7 +2,7 @@ const mysql = require('mysql');
 var msClient = mysql.createConnection({
     host: 'localhost',
     user:   'root',
-    password:   'tkh170294',
+    password:   'your_config_password',
     database:   'smartKiot',
     multipleStatements: 'true'
 });

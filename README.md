@@ -6,7 +6,7 @@ Bước 1: Cài mysql
 
 Bước 2: Config mysql
 - Mở file "./server/app/mysql/mysql.js"
-- Nhập password tương ứng với user "root" của mysql server
+- Nhập password tương ứng với user "root" của mysql server ở dòng số 5
 
 Bước 3: install packages cho server và client
 - Mở git bash tại folder smartKiot
