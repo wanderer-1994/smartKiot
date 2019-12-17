@@ -1,0 +1,40 @@
+.adminHeader{
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+    background-color: #004080;
+    font-size: 0px;
+}
+.adminHeader .wrapper0{
+    display: inline-block;
+    width: 20%;
+    font-size: initial;
+    border-right: 10px solid #efefef;
+}
+.adminHeader .wrapper0 p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.adminHeader > .wrapper1{
+    display: inline-block;
+    width: 80%;
+    height: 30px;
+    padding: 7px 10px 10px 5px;
+    font-size: initial;
+}
+.adminHeader > .wrapper1 > p{
+    display: inline-block;
+}
+.adminHeader > .wrapper1 > p.tag{
+    font-style: italic;
+    color: #aaaaaa;
+    text-align: right;
+    padding-right: 10px;
+    width: 17%;
+    font-size: 14px;
+}
+.adminHeader > .wrapper1 > p.value{
+    display: inline-block;
+    color: #dddddd;
+}

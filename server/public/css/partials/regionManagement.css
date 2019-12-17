@@ -1,0 +1,309 @@
+.homeBody{
+    padding-bottom: 120px;
+    background-color: #e9edf0;
+    position: relative;
+    min-height: 600px;
+    margin-top: calc(30px - 100vh);
+}
+.regionManagement{
+    background-color: #e9edf0;
+    padding: 10px 5px 10px 5px;
+}
+.regionManagement .wrapper1{
+    background-color: white;
+    border-radius: 10px;
+}
+.regionManagement .searchWrapper0{
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid #676767;
+}
+.regionManagement .wrapper2{
+    padding: 10px 20px 10px 20px;
+}
+.regionManagement .itemWrapper{
+    font-size: 0px;
+    margin-top: -1px;
+}
+.regionManagement .th{
+    font-size: 0px;
+    position: sticky;
+    top: 35px;
+    background-color: #efefef;
+}
+.regionManagement .itemWrapper > p,
+.regionManagement .th > p{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    width: 12%;
+    text-align: center;
+    border: 1px solid #dedede;
+    margin-left: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.regionManagement .th > p{
+    font-size: 14px;
+    color: #676767;
+}
+.regionManagement .itemWrapper > p:nth-child(2),
+.regionManagement .th > p:nth-child(1){
+    width: 5%;
+}
+.regionManagement .itemWrapper > p:nth-child(2){
+    font-style: italic;
+    text-align: right;
+    color: #676767;
+    padding-right: 5px;
+    background-color: #efefef;
+}
+.regionManagement .itemWrapper > p:last-child,
+.regionManagement .th > p:last-child{
+    float: right;
+    margin-top: -1px;
+    overflow: hidden;
+    text-overflow: initial;
+}
+.regionManagement .itemWrapper > p:nth-child(2) > input{
+    text-align: right;
+}
+.regionManagement .itemWrapper > p > input{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    padding: 3px;
+}
+/* sw1 means switch1 */
+.regionManagement .itemWrapper .tag{
+    display: none;
+}
+.regionManagement .itemWrapper .tag{
+    display: none;
+}
+.regionManagement .itemWrapper > p:last-child > span{
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+    font-style: normal;
+}
+.regionManagement .itemWrapper > p:last-child > span.save{
+    border: 1px solid #7dd420;
+    color: #7dd420;
+}
+.regionManagement .itemWrapper > p:last-child > span.del{
+    border: 1px solid #d8534e;
+    color: #d8534e;
+}
+.regionManagement .pagination{
+    margin-top: 10px;
+    padding: 3px 0px 3px 0px;
+    text-align: right;
+}
+.regionManagement .pagination .pagination_item{
+    display: inline-block;
+    border: 1px solid #428cc9;
+    color: #676767;
+    min-width: 30px;
+    padding: 0px 3px 0px 3px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.regionManagement .pagination .pagination_item.active{
+    background-color: #428cc9;
+    color: white;
+}
+.regionManagement .clearFilter{
+    display: inline-block;
+    background-color: #428cc9;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+}
+.regionManagement .searchText{
+    padding: 3px 5px 3px 5px;
+    font-size: 14px;
+    color: #676767;
+    font-style: italic;
+    border-radius: 3px;
+    border: 2px solid #03a9f4;
+}
+.regionManagement .addRegion{
+    float: right;
+    display: inline-block;
+    background-color: #428cc9;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 3px 5px 3px 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.regionProfile,
+.regionDelConfirm{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    top: 0px;
+    left: 0px;
+    z-index: 400;
+    display: none;
+}
+.regionProfile .inner,
+.regionDelConfirm .inner{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 10px;
+}
+.regionProfile .inner .footer,
+.regionDelConfirm .inner .footer{
+    text-align: center;
+    height: 40px;
+    padding: 0px 5px 0px 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid #676767;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.regionProfile .inner .footer .inner_button.save,
+.regionDelConfirm .inner .footer .inner_button.del{
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #8dc640;
+    border-radius: 5px;
+    text-align: center;
+    color: #8dc640;
+    cursor: pointer;
+}
+.regionProfile .inner .footer .inner_button.close,
+.regionDelConfirm .inner .footer .inner_button.cancel{
+    display: inline-block;
+    margin: 5px;
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    color: red;
+    cursor: pointer;
+}
+.regionProfile .inner .inner_content,
+.regionDelConfirm .inner .inner_content{
+    padding: 5px;
+    height: 100%;
+    padding-bottom: 60px;
+    position: relative;
+}
+.regionProfile .inner .inner_content .required{
+    color: red;
+    z-index: 10;
+    font-size: initial;
+}
+.regionDelConfirm .inner_content p{
+    text-align: center;
+    font-style: italic;
+    color: #676767;
+    font-size: 14px;
+}
+.regionDelConfirm .inner_content p span{
+    color: blue;
+    font-style: normal;
+    font-size: initial;
+}
+.regionProfile .inner .inner_content .tag{
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 5px;
+    margin-top: 15px;
+}
+.regionProfile .inner .inner_content .value{
+    width: 60%;
+    display: inline-block;
+}
+.customInputWrapper{
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+.customInputWrapper input{
+    width: 96%;
+    margin-left: 2%;
+    height: 27px;
+    margin-top: 4px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #9a9a9a;
+    border-radius: 3px;
+    padding: 0px 5px 0px 5px;
+}
+.customInputWrapper .selectContainer{
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    top: 0px;
+    min-height: 35px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #efefef;
+    border-radius: 3px;
+    opacity: 1;
+}
+.customInputWrapper .selectContainer::-webkit-scrollbar{
+    width: 5px;
+}
+.customInputWrapper .selectContainer::-webkit-scrollbar-thumb{
+    background-color: #03a9f4;
+    border-radius: 5px;
+}
+.customInputWrapper .selectContainer::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 5px;
+}
+.customInputWrapper .selectContainer > p:nth-child(1){
+    margin-top: 35px;
+}
+.customInputWrapper .selectContainer > p{
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 3px;
+    height: 30px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+
+}
+.customInputWrapper .selectContainer > p:hover{
+    color: green;
+}

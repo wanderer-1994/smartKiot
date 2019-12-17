@@ -1,0 +1,93 @@
+.banner .logo img{
+    max-height: 60%;
+    width: auto;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform:translateY(-50%);
+}
+.banner .motto{
+    width: 20%;
+    height: 60px;
+    padding: 0px;
+    margin-right: 2%;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+.banner .motto img{
+    max-height: 60%;
+    width: auto;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform:translateY(-50%);
+}
+@media all and (min-width: 1001px){
+    .banner{
+        width: 85%;
+        margin-left: 10%;
+    }
+    .banner .logo{
+        width: 25%;
+        height: 60px;
+        padding: 0px;
+        margin-right: 9%;
+        text-align: center;
+        float: left;
+        position: relative;
+    }
+}
+/* Tablet */
+@media all and (min-width: 761px) and (max-width: 1000px){
+    .banner{
+        margin-left: 40px;;
+    }
+    .banner .logo{
+        width: 25%;
+        height: 60px;
+        padding: 0px;
+        margin-right: 9%;
+        text-align: center;
+        float: left;
+        position: relative;
+    }
+}
+/* Cell phone */
+@media all and (max-width: 760px){
+    .banner{
+        width: 100%;
+        height: 55px;
+    }
+    .banner .logo{
+        z-index: 1;
+        width: 100%;
+        height: 55px;
+        position: absolute;
+        opacity: 1;
+        background-color: white;
+    }
+    .banner .logo img{
+        max-height: 60%;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .banner .motto{
+        position: absolute;
+        width: 100%;
+        height: 55px;
+        opacity: 1;
+        background-color: white;
+    }
+    .banner .motto img{
+        max-height: 60%;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}

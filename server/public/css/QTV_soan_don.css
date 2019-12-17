@@ -1,0 +1,112 @@
+/* Start order_listing */
+.order_listing .see_all,
+.order_listing .hide_all{
+    float: left;
+    margin-right: 5px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #8dc640;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.order_listing .see_all:hover,
+.order_listing .hide_all:hover{
+    background-color: white;
+    color: #8dc640;
+    border: 2px solid #8dc640;
+}
+    /* Desktop */
+@media all and (min-width: 451px){
+    .order_listing .goods_count{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-weight: bold;
+    }
+}
+@media all and (max-width: 450px){
+    .order_listing .date_header{
+        font-weight: bold;
+        height: 30px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .order_listing .goods_count{
+        position: absolute;
+        top: 25px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+/* Start prod */
+.prod{
+    position: relative;
+    padding-bottom: 10px;
+}
+.prod .prod_count{
+    position: absolute;
+    top: 45px;
+    left: 215px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: rgb(119, 9, 9);
+    color: white;
+}
+.prod_info{
+    position: relative;
+    background-color: rgb(76, 185, 189);
+}
+.prod_info p{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: rgb(119, 9, 9);
+    cursor: pointer;
+}
+.prod_info p span{
+    display: inline-block;
+    width: 90px;
+    color: white;
+}
+.s_order_detail{
+    display: none;
+}
+.s_order_detail .s_order div{
+    float: left;
+    padding-top: 3px;
+    height: 25px;
+}
+.s_order_detail .s_order .ship_qty span{
+    float: left;
+}
+.s_order_detail .s_order .header{
+    border-bottom: 1px solid red;
+}
+.s_order_detail .s_order .order_id{
+    width: 110px;
+}
+.s_order_detail .s_order .order_qty{
+    width: 100px;
+}
+.s_order_detail .s_order .ship_qty{
+    width: 110px;
+}
+.s_order_detail .s_order input[type = number]{
+    margin-right: 3px;
+    width: 70px;
+    height: 22px;
+    font-size: 1em;
+}

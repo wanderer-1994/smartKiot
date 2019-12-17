@@ -1,0 +1,181 @@
+.homeBody{
+    padding-bottom: 120px;
+    background-color: #e9edf0;
+    position: relative;
+    min-height: 600px;
+    margin-top: calc(30px - 100vh);
+}
+.userManagement{
+    background-color: #e9edf0;
+    padding: 10px 5px 10px 5px;
+}
+.userManagement .wrapper1{
+    background-color: white;
+    border-radius: 10px;
+}
+.userManagement .searchWrapper0{
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid #676767;
+}
+.userManagement .wrapper2{
+    padding: 10px 20px 10px 20px;
+}
+.userManagement .itemWrapper{
+    font-size: 0px;
+    margin-top: -1px;
+}
+.userManagement .th{
+    font-size: 0px;
+    position: sticky;
+    top: 35px;
+    background-color: #efefef;
+}
+.userManagement .itemWrapper > p,
+.userManagement .th > p{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    width: 12%;
+    text-align: center;
+    border: 1px solid #dedede;
+    margin-left: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.userManagement .th > p{
+    font-size: 14px;
+    color: #676767;
+}
+.userManagement .itemWrapper > p:nth-child(2),
+.userManagement .th > p:nth-child(1){
+    width: 5%;
+}
+.userManagement .itemWrapper > p:nth-child(2),
+.userManagement .itemWrapper > p:nth-child(4){
+    font-style: italic;
+    text-align: right;
+    color: #676767;
+    padding-right: 5px;
+    background-color: #efefef;
+}
+.userManagement .itemWrapper > p:nth-child(6),
+.userManagement .th > p:nth-child(3){
+    width: 14%;
+}
+.userManagement .itemWrapper > p:nth-child(4),
+.userManagement .th > p:nth-child(2){
+    width: 6%;
+}
+.userManagement .itemWrapper > p:nth-child(28),
+.userManagement .th > p:nth-child(14){
+    width: 15%;
+}
+.userManagement .itemWrapper > p:last-child,
+.userManagement .th > p:last-child{
+    float: right;
+    margin-top: -1px;
+    overflow: hidden;
+    text-overflow: initial;
+}
+.userManagement .itemWrapper > p.sw1,
+.userManagement .th > p.sw1{
+    display: none;
+}
+.userManagement .itemWrapper > p:nth-child(2) > input,
+.userManagement .itemWrapper > p:nth-child(4) > input{
+    text-align: right;
+}
+.userManagement .itemWrapper > p > input{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    padding: 3px;
+}
+/* sw1 means switch1 */
+.userManagement .itemWrapper .tag{
+    display: none;
+}
+.userManagement .itemWrapper .tag{
+    display: none;
+}
+.userManagement .itemWrapper > p:last-child > span{
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+    font-style: normal;
+}
+.userManagement .itemWrapper > p:last-child > span.open{
+    border: 1px solid #428cc9;
+    color: #428cc9;
+}
+.userManagement .itemWrapper > p:last-child > span.save{
+    border: 1px solid #7dd420;
+    color: #7dd420;
+}
+.userManagement .itemWrapper > p:last-child > span.show_pas{
+    width: 60px;
+    border: 1px solid #fe9600;
+    color: #fe9600;
+}
+.userManagement .wrapper1 .switch{
+    display: inline-block;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 25px;
+    cursor: pointer;
+    border: 1px solid #9c27b0;
+    color: #9c27b0;
+}
+.userManagement .pagination{
+    margin-top: 10px;
+    padding: 3px 0px 3px 0px;
+    text-align: right;
+}
+.userManagement .pagination .pagination_item{
+    display: inline-block;
+    border: 1px solid #428cc9;
+    color: #676767;
+    min-width: 30px;
+    padding: 0px 3px 0px 3px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.userManagement .pagination .pagination_item.active{
+    background-color: #428cc9;
+    color: white;
+}
+.userManagement .clearFilter{
+    display: inline-block;
+    background-color: #428cc9;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+}
+.userManagement .searchText{
+    padding: 3px 5px 3px 5px;
+    font-size: 14px;
+    color: #676767;
+    font-style: italic;
+    border-radius: 3px;
+    border: 2px solid #03a9f4;
+}

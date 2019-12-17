@@ -1,0 +1,56 @@
+/* Desktop */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input,
+textarea,
+select option{
+    font-size: 1em;
+}
+select option{
+    height: 30px;
+    background-color: rgb(243, 237, 237);
+    border-bottom: 1px solid white;
+}
+
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+    min-height: 101%;
+}
+@media all and (min-width: 1001px){
+    .homeBody{
+        padding-bottom: 120px;
+        padding-left: 2px;
+        width: 80%;
+        float: right;
+        background-color: #e9edf0;
+        position: relative;
+        min-height: 100vh;
+        margin-top: -100vh;
+    }
+}
+/* Tablet */
+@media all and (min-width: 761px) and (max-width: 1000px){
+    
+}
+/* Cell phone */
+

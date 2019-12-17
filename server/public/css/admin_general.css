@@ -1,0 +1,51 @@
+.homeBody{
+    min-height: calc(100vh + 10px);
+    padding-bottom: 0px;
+}
+.body_container,
+.order_listing{
+    padding-bottom: 80px;
+    position: relative;
+}
+
+@media all and (min-width: 451px){
+    .order_listing{
+        width: 85%;
+        margin: auto;
+        margin-top: 35px;
+    }
+}
+@media all and (max-width: 450px){
+    .order_listing{
+        width: 100%;
+        margin-top: 35px;
+    }
+}
+
+/* Start footer */
+@media all and (min-width: 451px){
+    footer{
+        position: absolute;
+        bottom: 0px;
+        height: 60px;
+        width: calc(100% - 2px);
+        background-color: gray;
+        color: #8dc640;
+        text-align: center;
+        line-height: 60px;
+        font-size: 2em;
+    }
+}
+@media all and (max-width: 450px){
+    footer{
+        position: absolute;
+        bottom: 0px;
+        width: calc(100% - 2px);
+        height: 60px;
+        background-color: gray;
+        color: #8dc640;
+        text-align: center;
+        line-height: 60px;
+        font-size: 2em;
+    }
+}
