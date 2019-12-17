@@ -32,6 +32,7 @@ function filterProductBySearchText(ori_products, searchText, ori_pagination){
             }
         })
     }
+    let TotalItem = filterBySearchText.length;
     NoOfPage = pagination.pageSize == 0 ? 1 : filterBySearchText.length / pagination.pageSize;
     if(NoOfPage > parseInt(NoOfPage)) NoOfPage = parseInt(NoOfPage) + 1;
     if(NoOfPage == 0) NoOfPage = 1;
@@ -40,7 +41,7 @@ function filterProductBySearchText(ori_products, searchText, ori_pagination){
     let end = pagination.pageSize == 0 ? filterBySearchText.length : current * pagination.pageSize;
     if(end > filterBySearchText.length) end = filterBySearchText.length;
     filterData = filterBySearchText.slice(start, end);
-    return {filterData: filterData, NoOfPage: NoOfPage};
+    return {filterData: filterData, NoOfPage: NoOfPage, TotalItem: TotalItem, StartIndex: start};
 }
 
 export {

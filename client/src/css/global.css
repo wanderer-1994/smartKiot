@@ -132,9 +132,7 @@ input{
     display: table;
 }
 .paginationSelect{
-    position: absolute;
-    width: 98%;
-    left: 1%;
+    margin: auto;
 }
 .paginationSelect .paginationFloatRightWrapper{
     padding: 5px;

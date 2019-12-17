@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import store from "redux/store";
 import Button from "components/CustomButtons/Button";
-import { filterProductBySearchText } from "facilities/facilities";
+import { filterProductBySearchText } from "utils/utilities";
 import NavigateBefore from "@material-ui/icons/NavigateBefore";
 import NavigateNext from "@material-ui/icons/NavigateNext";
 import AddProduct from "./Component/AddProduct";
@@ -120,7 +120,7 @@ class UpdateProduct extends React.Component{
 
     render = () => {
         const { products, searchText, pagination } = this.state;
-        const { filterData, NoOfPage } = filterProductBySearchText(products, searchText, pagination);
+        const { filterData, NoOfPage, TotalItem, StartIndex } = filterProductBySearchText(products, searchText, pagination);
         if(pagination.current > NoOfPage) this.setState({pagination: {...pagination, current: NoOfPage}})
         let paginationSelect = [];
         for(let i=0; i<NoOfPage; i++){
@@ -176,7 +176,7 @@ class UpdateProduct extends React.Component{
                                 }
                                 return (
                                     <div className="tbDataItem" key={item.prod_id}>
-                                        <div className="tbColumn stt">{index + 1}</div>
+                                        <div className="tbColumn stt">{StartIndex + index + 1}</div>
                                         <div className="tbColumn prod_name"><input
                                             value={item.prod_name} onChange={event=>this.handleItemInputChange(item.prod_id, "prod_name", event.target.value)}
                                             style={{color: color, height: "100%", width: "100%", padding: "3px 50x 3px 5px",margin: "0px 3px 0px 3px", border: "none"}}
@@ -213,7 +213,7 @@ class UpdateProduct extends React.Component{
                     {/* Pagination */}
                     <div className="paginationBar" style={{marginTop: "5px"}}>
                         <div className="paginationFloatRightWrapper">
-                            <div className="paginationTotalItem">Tổng: <span>{filterData.length}</span> sản phẩm</div>
+                            <div className="paginationTotalItem">Tổng: <span>{TotalItem}</span> sản phẩm</div>
                             <div className="paginationItem prev"
                                 style={this.state.pagination.current == 1 ? {backgroundColor: "#efefef", cursor: "text"} : null}
                                 onClick={this.state.pagination.current == 1 ? null : () => this.handlePaginationChange({current: this.state.pagination.current - 1})}
@@ -231,6 +231,7 @@ class UpdateProduct extends React.Component{
                                     value={this.state.pagination.pageSize}
                                 >
                                     <option value="10">10</option>
+                                    <option value="15">15</option>
                                     <option value="20">20</option>
                                     <option value="30">30</option>
                                     <option value="40">40</option>
